@@ -1,0 +1,51 @@
+/* Estilos generales para evitar el scroll */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Evita el scroll en toda la página */
+}
+
+/* Contenedor principal */
+.h-custom {
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Evita el scroll dentro del contenedor */
+}
+
+/* Elimina el padding del contenedor fluid */
+.container-fluid {
+    padding: 0;
+}
+
+/* Ajusta el margen del título */
+.text-center.mt-2 {
+    margin-top: 0.5rem !important; /* Reduce el margen superior */
+}
+
+/* Ajusta el margen del formulario */
+.offset-xl-1.mt-5 {
+    margin-top: 1rem !important; /* Reduce el margen superior */
+}
+
+/* Ajusta el espacio entre la imagen y el formulario */
+.col-md-9.col-lg-6.col-xl-5 {
+    margin-bottom: 1rem;
+}
+
+/* Asegura que la sección de login ocupe el espacio correcto */
+.login-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsividad para dispositivos pequeños */
+@media (max-width: 450px) {
+    .h-custom {
+        height: auto; /* Ajusta la altura en dispositivos pequeños */
+    }
+}
